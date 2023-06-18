@@ -1,0 +1,10 @@
+version: "2"
+services:
+  mygpt4all:
+    build:
+      context: .
+    restart: always
+    ports:
+      - 5001:5001
+    volumes:
+      - ./cache:/root/.cache:rw
