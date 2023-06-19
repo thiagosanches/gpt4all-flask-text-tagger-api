@@ -22,7 +22,7 @@ sha512sum cache/gpt4all/ggml-gpt4all-j-v1.3-groovy.bin
 
 ### Test
 
-**Content**: Pix is an instant payment platform created and managed by the monetary authority of Brazil, the Central Bank of Brazil (BCB),[1] which enables the quick execution of payments and transfers.[2] Pix was announced in the summer of 2019,[3] and was fully operational on November 16, 2020.[1] The \"Pix\" brand name and logo were created in-house by the Central Bank of Brazil in 2020."
+**Content**: *"Pix is an instant payment platform created and managed by the monetary authority of Brazil, the Central Bank of Brazil (BCB),[1] which enables the quick execution of payments and transfers.[2] Pix was announced in the summer of 2019,[3] and was fully operational on November 16, 2020.[1] The \"Pix\" brand name and logo were created in-house by the Central Bank of Brazil in 2020."*
 
 ```bash
 time curl http://localhost:5001/completion -X POST --data '{"content":"Pix is an instant payment platform created and managed by the monetary authority of Brazil, the Central Bank of Brazil (BCB),[1] which enables the quick execution of payments and transfers.[2] Pix was announced in the summer of 2019,[3] and was fully operational on November 16, 2020.[1] The \"Pix\" brand name and logo were created in-house by the Central Bank of Brazil in 2020."}' -H "Content-Type: application/json"
