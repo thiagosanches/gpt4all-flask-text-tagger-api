@@ -25,6 +25,8 @@ time curl http://localhost:5001/completion -X POST --data '{"content":"Pix is an
 ```
 
 ### Results
-It worked really well it returned 3 meaninful tags: `#PiX #BCB #PaymentsPlatform` as we can see on the picture below:
+It worked exceptionally well! It successfully extracted three meaningful tags from the aforementioned text: `#PiX #BCB #PaymentsPlatform`, as depicted in the picture below:
 ![image](https://github.com/thiagosanches/gpt4all-flask-text-tagger-api/assets/5191469/702d63fb-e299-4710-bf8a-67dbdf21b76c)
 
+### Next steps and my personal considerations
+Gain a deeper understanding of how it works to fully leverage its potential. This method proves to be the most straightforward way to run a large language model (LLM) on standard consumer hardware. I've explored other approaches previously, but they presented challenges due to the limitations of my hardware.
