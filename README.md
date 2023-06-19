@@ -31,6 +31,7 @@ time curl http://localhost:5001/completion -X POST --data '{"content":"Pix is an
 ### Results
 
 It worked exceptionally well! It successfully extracted three meaningful tags from the aforementioned text: `#PiX #BCB #PaymentsPlatform`, as depicted in the picture below:
+
 ![image](https://github.com/thiagosanches/gpt4all-flask-text-tagger-api/assets/5191469/702d63fb-e299-4710-bf8a-67dbdf21b76c)
 
 ### Next steps and my personal considerations
