@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, abort
 from gpt4all import GPT4All
 import logging
 
-gptj = GPT4All("ggml-gpt4all-j-v1.3-groovy")
 app = Flask(__name__)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
@@ -14,7 +13,9 @@ def completion():
         prompt = f"""You are my note-taking assistant. Please tag any given piece of text with relevant hashtags. Please, only answer with 3 (three) or less tags without any additional information.
 
 \"{content}\"
-"""
+""" 
+        logging.info(prompt)
+        gptj = GPT4All("ggml-gpt4all-j-v1.3-groovy")
         result = gptj.generate(prompt, streaming=False)
         logging.info(result)
         return jsonify({'content': result})
