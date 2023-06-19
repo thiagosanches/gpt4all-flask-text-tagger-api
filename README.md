@@ -1,8 +1,6 @@
 # gpt4all-flask-text-tagger-api
 
-A small Python and Flask project that utilizes [GPT4All](https://gpt4all.io/index.html) to categorize text using tags. It provides a simple API for tagging text, making it easy to organize and categorize large volumes of text data with accuracy and efficiency.
-
-My idea is to use it on my personal notes tagging them automatically.
+A small Python and Flask project that utilizes [GPT4All](https://gpt4all.io/index.html) to categorize text using tags. It provides a simple API for tagging text, making it easy to organize and categorize large volumes of text data with accuracy and efficiency. My idea is to use it on my personal notes,  tagging them automatically.
 
 ### Usage
 
