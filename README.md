@@ -39,3 +39,5 @@ It worked exceptionally well! It successfully extracted three meaningful tags fr
 ### Next steps and my personal considerations
 
 Gain a deeper understanding of how it works to fully leverage its potential. This method proves to be the most straightforward way to run a large language model (LLM) on standard consumer hardware. I've explored other approaches previously, but they presented challenges due to the limitations of my hardware.
+
+**Important Note**: In addition to its impressive speed in the above example (approximately 26 seconds), I observed that when the prompt contains more tokens, the response time may increase to around 10 minutes, and the CPU usage remains consistently at 100%.
