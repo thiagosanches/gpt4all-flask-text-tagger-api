@@ -3,6 +3,7 @@
 A small Python and Flask project that utilizes [GPT4All](https://gpt4all.io/index.html) to categorize text using tags. It provides a simple API for tagging text, making it easy to organize and categorize large volumes of text data with accuracy and efficiency.
 
 ### Usage
+
 ```bash
 git clone https://github.com/thiagosanches/gpt4all-flask-text-tagger-api.git
 cd gpt4all-flask-text-tagger-api
@@ -20,13 +21,18 @@ sha512sum cache/gpt4all/ggml-gpt4all-j-v1.3-groovy.bin
 ```
 
 ### Test
+
+**Content**: Pix is an instant payment platform created and managed by the monetary authority of Brazil, the Central Bank of Brazil (BCB),[1] which enables the quick execution of payments and transfers.[2] Pix was announced in the summer of 2019,[3] and was fully operational on November 16, 2020.[1] The \"Pix\" brand name and logo were created in-house by the Central Bank of Brazil in 2020."
+
 ```bash
 time curl http://localhost:5001/completion -X POST --data '{"content":"Pix is an instant payment platform created and managed by the monetary authority of Brazil, the Central Bank of Brazil (BCB),[1] which enables the quick execution of payments and transfers.[2] Pix was announced in the summer of 2019,[3] and was fully operational on November 16, 2020.[1] The \"Pix\" brand name and logo were created in-house by the Central Bank of Brazil in 2020."}' -H "Content-Type: application/json"
 ```
 
 ### Results
+
 It worked exceptionally well! It successfully extracted three meaningful tags from the aforementioned text: `#PiX #BCB #PaymentsPlatform`, as depicted in the picture below:
 ![image](https://github.com/thiagosanches/gpt4all-flask-text-tagger-api/assets/5191469/702d63fb-e299-4710-bf8a-67dbdf21b76c)
 
 ### Next steps and my personal considerations
+
 Gain a deeper understanding of how it works to fully leverage its potential. This method proves to be the most straightforward way to run a large language model (LLM) on standard consumer hardware. I've explored other approaches previously, but they presented challenges due to the limitations of my hardware.
